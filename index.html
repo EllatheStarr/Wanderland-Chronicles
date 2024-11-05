@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderland Chronicles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sticky-nav">
+        <div class="nav-content">
+            <div class="logo">Wanderland Chronicles</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#featured">Featured</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#subscribe">Subscribe</a>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero">
+            <h1>Wanderland Chronicles</h1>
+            <p>Exploring the world...</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="featured" class="featured-posts">
+            <h2 class="featured-posts">Featured Posts</h2>
+            <div class="carousel-container">
+                <button class="carousel-button prev" aria-label="Previous slide">❮</button>
+                <div class="carousel">
+                    <div class="carousel-slide">
+                        <img src="images/bali.png" alt="Bali Beaches">
+                        <h3>Paradise in Bali</h3>
+                        <p>Discover the pristine beaches and cultural heritage...</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/swiss alps.png" alt="Swiss Alps">
+                        <h3>Swiss Alps Adventure</h3>
+                        <p>Hiking through the majestic mountains...</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/tokyo.png" alt="Tokyo Streets">
+                        <h3>Tokyo Nights</h3>
+                        <p>Exploring the vibrant streets of Japan's capital...</p>
+                    </div>
+                </div>
+                <button class="carousel-button next" aria-label="Next slide">❯</button>
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            <article class="main-content">
+                <section id="latest-post">
+                    <h2>Latest Adventure</h2>
+                    <div class="post">
+                        <img class='latest-adventure' src="images/rainforest.png" alt="Latest adventure">
+                        <h3>Journey Through the Amazon Rainforest</h3>
+                        <p class="post-meta">Posted on October 25, 2024</p>
+                        <div class="post-content">
+                            <p class="excerpt">Experience the incredible biodiversity and indigenous cultures of the Amazon rainforest. Our three-week expedition took us deep into the heart of the world's largest rainforest...</p>
+                            <div class="full-content">
+                                <p>Experience the incredible biodiversity and indigenous cultures of the Amazon rainforest. Our three-week expedition took us deep into the heart of the world's largest rainforest, where we encountered exotic wildlife, learned from local tribes, and discovered the delicate balance of this crucial ecosystem.</p>
+                                <p>Day after day, we ventured further into the jungle, guided by experienced locals who shared their ancestral knowledge. We learned about medicinal plants, traditional hunting techniques, and the importance of conservation. The humidity was intense, but the rewards were greater – from spotting rare pink dolphins in the river to watching colorful macaws soar overhead.</p>
+                                <p>One of the highlights was spending time with the indigenous community, learning about their sustainable way of life and their deep connection to the forest. They showed us how they make traditional crafts, prepare local delicacies, and maintain their cultural heritage despite the encroachment of the modern world.</p>
+                                <p>The nights were filled with the symphony of jungle sounds – from the haunting calls of howler monkeys to the persistent chorus of cicadas. Sleeping in traditional hammocks under the canopy gave us a true taste of jungle life.</p>
+                            </div>
+                        </div>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </section>
+
+                <section id="gallery" class="photo-gallery">
+                    <h2>Travel Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="images/people.png" alt="Travel photo 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/balloons.png" alt="Travel photo 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/girl1.png" alt="Travel photo 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/newyork.png" alt="Travel photo 4">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/safari.png" alt="Travel photo 5">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/paris.png" alt="Travel photo 6">
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <aside class="sidebar">
+                <div class="featured-tip">
+                    <h3>Travel Tip of the Day</h3>
+                    <p>Always carry a portable charger for your devices!</p>
+                </div>
+
+                <section id="subscribe" class="subscribe-form">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Travel Interest:</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="beaches">Beaches</option>
+                                <option value="mountains">Mountains</option>
+                                <option value="cities">Cities</option>
+                                <option value="culture">Culture</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: travel@wanderlandchronicles.com</p>
+                <p>Phone: +233 (050) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wanderland Chronicles. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
